@@ -1,5 +1,4 @@
-# AL-Go Template
-## Per Tenant Extension Project
-This template repository can be used for managing Per Tenant Extensions for Business Central.
-
-Please consult https://github.com/microsoft/AL-Go/#readme for scenarios on usage
+# BC Development Notebook
+## Notes by Tonya Bricco-Meske
+This code is related to content found on my blog:
+http://www.bcdevnotebook.com
