@@ -4,15 +4,15 @@
   "publisher": "Tonya Bricco-Meske",
   "version": "1.0.0.0",
   "brief": "",
-  "description": "",
+  "description": "AL App for BCDevNotebook content",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
-  "url": "",
+  "url": "http://www.bcdevnotebook.com",
   "logo": "",
   "dependencies": [],
   "screenshots": [],
-  "platform": "1.0.0.0",
+  "platform": "22.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [
     {
