@@ -9,6 +9,7 @@ report 70100 "TBM_Custom Sales Report"
         dataitem(SalesHeader; "Sales Header")
         {
             column(No; "No.") { }
+            column(TermsConditions; TermsConditionsVar) { }
         }
     }
     rendering
@@ -24,4 +25,15 @@ report 70100 "TBM_Custom Sales Report"
             LayoutFile = '.App//AL Code/Report/Layouts/TBMCustomSalesReport.Layout.docx';
         }
     }
+
+    trigger OnInitReport()
+    begin
+        SalesSetup.Get();
+        TermsConditionsVar := SalesSetup.TBM_GetSalesOrderTermsConditions();
+        Message(TermsConditionsVar);
+    end;
+
+    var
+        SalesSetup: Record "Sales & Receivables Setup";
+        TermsConditionsVar: Text;
 }
