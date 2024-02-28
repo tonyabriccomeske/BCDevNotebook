@@ -8,8 +8,26 @@ report 70100 "TBM_Custom Sales Report"
     {
         dataitem(SalesHeader; "Sales Header")
         {
+            DataItemTableView = sorting("Document Type", "No.") where("Document Type" = const(Order));
+            RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
+            RequestFilterHeading = 'Sales Order';
+
             column(No; "No.") { }
             column(TermsConditions; TermsConditionsVar) { }
+            column(CustomerLabel; StrSubstNo(CustomerLbl, "Sell-to Customer No.", "Sell-to Customer Name")) { }
+
+            dataitem(Line; "Sales Line")
+            {
+                DataItemLink = "Document No." = field("No.");
+                DataItemLinkReference = SalesHeader;
+                DataItemTableView = sorting("Document No.", "Line No.");
+                column(LineNo_Line; "Line No.") { }
+                column(SalesLine_No; "No.") { }
+                column(Description_Line; Description)
+                {
+                    IncludeCaption = true;
+                }
+            }
         }
     }
     rendering
@@ -25,6 +43,12 @@ report 70100 "TBM_Custom Sales Report"
             LayoutFile = '.App//AL Code/Report/Layouts/TBMCustomSalesReport.Layout.docx';
         }
     }
+    labels
+    {
+        SalesOrderLbl = 'Sales Order No.';
+        ReportTitle = 'My Test Sales Report';
+        ItemNoLbl = 'Item No.';
+    }
 
     trigger OnInitReport()
     begin
@@ -36,4 +60,5 @@ report 70100 "TBM_Custom Sales Report"
     var
         SalesSetup: Record "Sales & Receivables Setup";
         TermsConditionsVar: Text;
+        CustomerLbl: Label 'Customer %1: %2', Comment = '%1 = Customer No., %2 = Customer Name';
 }
