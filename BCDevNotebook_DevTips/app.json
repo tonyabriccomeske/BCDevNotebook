@@ -1,0 +1,32 @@
+{
+  "id": "c383f1b2-9b71-4817-8cf2-3213b584a1e0",
+  "name": "BCDevNotebook_DevTips",
+  "publisher": "Tonya Bricco-Meske",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "http://www.bcdevnotebook.com",
+  "logo": ".vscode/BCDevLogo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "23.0.0.0",
+  "application": "23.0.0.0",
+  "idRanges": [
+    {
+      "from": 70150,
+      "to": 70170
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "12.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

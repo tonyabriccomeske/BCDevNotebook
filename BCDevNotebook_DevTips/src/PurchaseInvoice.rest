@@ -1,0 +1,81 @@
+@tenantId = 
+@clientId = 
+@clientSecret =  
+@bcEnvironmentNameProduction = 
+@bcEnvironmentNameSandbox = 
+@baseUri = https://api.businesscentral.dynamics.com
+
+@bcEnvironmentName = {{bcEnvironmentNameSandbox}}
+@scope = {{baseUri}}/.default
+@fullBCEnvironmentName = {{tenantId}}/{{bcEnvironmentName}}
+@urlBase = {{baseUri}}/v2.0/{{bcEnvironmentName}}/api/v2.0
+
+
+
+### Define entity, like customers, items, or vendors
+
+@entityName = purchaseInvoices?$expand=purchaseInvoiceLines
+
+
+#*******************************************************************************************************
+# @name auth
+POST https://login.microsoftonline.com/{{tenantId}}/oauth2/v2.0/token HTTP/1.1
+Content-type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id={{clientId}}
+&client_secret={{clientSecret}}
+&scope={{scope}}
+#*******************************************************************************************************
+
+#*******************************************************************************************************
+### Variable Response
+@accessHeader = Bearer {{auth.response.body.$.access_token}}
+#*******************************************************************************************************
+
+#*******************************************************************************************************
+# @name GetCompanies
+GET {{urlBase}}/companies HTTP/1.1
+Authorization: {{accessHeader}}
+#*******************************************************************************************************
+
+#*******************************************************************************************************
+### Variable Response
+@companyId = {{GetCompanies.response.body.value.[0].id}}
+
+@companyUrl = {{urlBase}}/companies({{companyId}})
+
+#*******************************************************************************************************
+#*******************************************************************************************************
+
+### Get entities Lines-AfterGetCompanies
+# @name GetEntities
+GET {{companyUrl}}/{{entityName}} HTTP/1.1
+Authorization: {{accessHeader}}
+#*******************************************************************************************************
+#*******************************************************************************************************
+### Post entities with Lines- After GetCompanies
+# @name PostEntities
+
+POST {{companyUrl}}/{{entityName}} HTTP/1.1
+Authorization: {{accessHeader}}
+Content-Type:  application/json
+
+{
+     "postingDate": "2023-04-08",
+     "invoiceDate": "2023-04-08",
+     "dueDate": "2023-04-30",
+     "vendorInvoiceNumber": "22211",
+     "vendorNumber": "20000",
+     "payToVendorNumber": "20000",
+     "purchaseInvoiceLines": [
+          {
+            "lineType": "Item",
+            "lineObjectNumber": "1968-S",
+            "unitCost": 101.25,
+            "quantity": 1
+          }        
+     ]
+}
+
+#*******************************************************************************************************
