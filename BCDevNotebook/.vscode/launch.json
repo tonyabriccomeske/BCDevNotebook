@@ -1,20 +1,30 @@
 {
     "version":  "0.2.0",
     "configurations":  [
-        {
-            "name":  "Your own server",
-            "request":  "launch",
-            "type":  "al",
-            "environmentType":  "OnPrem",
-            "server":  "http://bcserver",
-            "serverInstance":  "BC",
-            "authentication":  "UserPassword",
-            "breakOnError":  "All",
-            "launchBrowser":  true,
-            "enableLongRunningSqlStatements":  true,
-            "enableSqlInformationDebugger":  true,
-            "tenant":  "default",
-            "usePublicURLFromServer":  true
-        }
-    ]
+                           {
+                               "name":  "Your own server",
+                               "request":  "launch",
+                               "type":  "al",
+                               "environmentType":  "OnPrem",
+                               "server":  "http://bcserver",
+                               "serverInstance":  "BC",
+                               "authentication":  "UserPassword",
+                               "breakOnError":  "All",
+                               "launchBrowser":  true,
+                               "enableLongRunningSqlStatements":  true,
+                               "enableSqlInformationDebugger":  true,
+                               "tenant":  "default",
+                               "usePublicURLFromServer":  true
+                           },
+                           {
+                               "type":  "al",
+                               "request":  "launch",
+                               "name":  "Local Sandbox (bc24)",
+                               "server":  "http://bc24",
+                               "serverInstance":  "BC",
+                               "port":  7049,
+                               "tenant":  "default",
+                               "authentication":  "UserPassword"
+                           }
+                       ]
 }
