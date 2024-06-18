@@ -14,6 +14,8 @@ pageextension 70104 "TBM_SalesReceivablesSetup" extends "Sales & Receivables Set
                     MultiLine = true;
                     ExtendedDatatype = RichContent;
                     ShowCaption = false;
+                    InstructionalText = 'Enter the terms and conditions for sales orders.';
+
                     trigger OnValidate()
                     begin
                         Rec.TBM_SetSalesOrderTermsConditions(TBMTermsConditionsVar);
@@ -32,3 +34,5 @@ pageextension 70104 "TBM_SalesReceivablesSetup" extends "Sales & Receivables Set
     var
         TBMTermsConditionsVar: Text;
 }
+
+
