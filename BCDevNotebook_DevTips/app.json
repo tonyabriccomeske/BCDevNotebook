@@ -1,10 +1,10 @@
 {
-  "id": "92e5f877-adfb-4a63-a4e2-27d5a8a52fe9",
-  "name": "BCDevNotebook",
+  "id": "c383f1b2-9b71-4817-8cf2-3213b584a1e0",
+  "name": "BCDevNotebook_DevTips",
   "publisher": "Tonya Bricco-Meske",
   "version": "1.0.0.0",
   "brief": "",
-  "description": "AL App for BCDevNotebook content",
+  "description": "",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
@@ -12,21 +12,21 @@
   "logo": ".vscode/BCDevLogo.png",
   "dependencies": [],
   "screenshots": [],
-  "platform": "24.0.0.0",
-  "application": "24.0.0.0",
-  "runtime": "13.0",
+  "platform": "23.0.0.0",
+  "application": "23.0.0.0",
   "idRanges": [
     {
-      "from": 70100,
-      "to": 70149
+      "from": 70150,
+      "to": 70170
     }
-  ],
-  "features": [
-    "NoImplicitWith"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
-  }
+  },
+  "runtime": "12.0",
+  "features": [
+    "NoImplicitWith"
+  ]
 }

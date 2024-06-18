@@ -4,5 +4,6 @@
     "CRS.OnSaveAlFileAction": "Rename",
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
-    "CRS.ExtensionObjectNamePattern": "<Prefix><BaseNameShort>"
+    "CRS.ExtensionObjectNamePattern": "<Prefix><BaseNameShort>",
+    "editor.foldingImportsByDefault": true
 }

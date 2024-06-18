@@ -1,0 +1,19 @@
+{
+    "CRS.AlSubFolderName": "src",
+    "CRS.ObjectNamePrefix": "TBMDT_",
+    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ExtensionObjectNamePattern": "<Prefix><BaseNameShort>",
+
+    "alOutline.defaultApiPublisher": "bcdevnotebook",
+    "alOutline.defaultApiGroup": "cats",
+    "alOutline.defaultApiVersion": "1.0",
+
+
+    "al.enableCodeAnalysis": false,
+    "al.codeAnalyzers": [
+        "${AppSourceCop}",
+        "${CodeCop}","${PerTenantExtensionCop}","${UICop}"
+    ]
+}
