@@ -5,7 +5,13 @@
     },
     {
       "path": "BCDevNotebook"
-    }
+    },
+	{
+		"path": "BCDevNotebook/BCDevNotebook_DevTips"
+	},
+	{
+		"path":"BCDevNotebook/BCDevNotebook_ReportingExamples"
+	}
   ],
   "settings": {}
 }
