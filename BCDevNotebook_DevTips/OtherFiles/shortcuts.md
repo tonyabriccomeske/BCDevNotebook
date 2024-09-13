@@ -1,4 +1,5 @@
 ** show keystrokes with Screencasting**
+From Command Pallet: >Developer: Toggle Screencast Mode
 
 # VSCode Shortcuts
 - `Ctrl+B`: Toggle side bar

@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Local Sandbox (bc24)",
+            "server": "http://bc24",
+            "serverInstance": "BC",
+            "port": 7049,
+            "tenant": "default",
+            "authentication": "UserPassword"
+        },
+        {
+            "name": "Sandbox-25",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox-25",
+            "tenant": "bcf57f79-06ba-4b10-92b6-a7c95d13dd54",
+            "startupObjectId": 70158,
+            "startupObjectType": "Query"
+        }
+    ]
+}

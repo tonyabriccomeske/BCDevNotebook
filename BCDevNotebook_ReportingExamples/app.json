@@ -1,6 +1,6 @@
 {
-  "id": "c383f1b2-9b71-4817-8cf2-3213b584a1e0",
-  "name": "BCDevNotebook_DevTips",
+  "id": "883bb67e-3310-4309-9ee3-7e337027ee06",
+  "name": "BCDevNotebook_ReportingExamples",
   "publisher": "Tonya Bricco-Meske",
   "version": "1.0.0.0",
   "brief": "",
@@ -9,15 +9,23 @@
   "EULA": "",
   "help": "",
   "url": "http://www.bcdevnotebook.com",
+  "contextSensitiveHelpUrl": "http://www.bcdevnotebook.com/resources/",
   "logo": ".vscode/BCDevLogo.png",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "publisher": "Microsoft",
+      "name": "_Exclude_APIV2_",
+      "version": "1.0.0.0",
+      "id": "10cb69d9-bc8a-4d27-970a-9e110e9db2a5"
+    }
+  ],
   "screenshots": [],
-  "platform": "24.0.0.0",
-  "application": "24.0.0.0",
+  "platform": "25.0.0.0",
+  "application": "25.0.0.0",
   "idRanges": [
     {
       "from": 70150,
-      "to": 70170
+      "to": 70199
     }
   ],
   "resourceExposurePolicy": {
