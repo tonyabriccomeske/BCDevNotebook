@@ -4,6 +4,7 @@ report 70150 "TBMR_OverdueCustomerInvoices"
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     DefaultRenderingLayout = RDLCLayout;
+    DataAccessIntent = ReadOnly;
 
     dataset
     {
@@ -15,6 +16,7 @@ report 70150 "TBMR_OverdueCustomerInvoices"
             column(DocumentNo; OpenCLE.Document_No_) { }
             column(OriginalAmount; OpenCLE.Sum_Original_Amt_LCY) { }
             column(RemainingAmount; OpenCLE.Sum_Remaining_Amt_LCY) { }
+
             trigger OnPreDataItem()
             begin
                 OpenCLE.Open();
@@ -39,6 +41,12 @@ report 70150 "TBMR_OverdueCustomerInvoices"
     labels
     {
         ReportCaptionLbl = 'Overdue Customer Invoices';
+        CustomerNameLbl = 'Customer Name';
+        CustomerNoLbl = 'Customer No.';
+        DueDateLbl = 'Due Date';
+        DocumentNoLbl = 'Document No.';
+        OriginalAmountLbl = 'Original Amount';
+        RemainingAmountLbl = 'Remaining Amount';
     }
 
     var
