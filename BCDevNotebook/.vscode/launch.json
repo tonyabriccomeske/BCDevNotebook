@@ -25,6 +25,28 @@
                                "port":  7049,
                                "tenant":  "default",
                                "authentication":  "UserPassword"
-                           }
+                           },               {
+                               "type":  "al",
+                               "request":  "launch",
+                               "name":  "preview26",
+                               "server":  "http://preview26",
+                               "serverInstance":  "BC",
+                               "port":  7049,
+                               "tenant":  "default",
+                               "authentication":  "UserPassword"
+                           },
+                           {
+                            "type": "al",
+                            "request": "launch",
+                            "tenant": "bcf57f79-06ba-4b10-92b6-a7c95d13dd54",
+                            "environmentType": "Sandbox",
+                            "environmentName": "Sandbox-4",
+                            "name": "Sandbox-4",
+                            "schemaUpdateMode": "ForceSync",
+                            "enableLongRunningSqlStatements": true,
+                            "enableSqlInformationDebugger": true,
+                            "startupObjectId": 70103,
+                            "startupObjectType": "Report"
+                        }                
                        ]
 }
