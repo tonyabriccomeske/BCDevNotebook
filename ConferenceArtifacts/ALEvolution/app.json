@@ -1,0 +1,32 @@
+{
+  "id": "5893a262-8eac-46b4-9f4e-6ed54c0af0ca",
+  "name": "ALEvolution",
+  "publisher": "Tonya Bricco-Meske & Henrik Helgesen",
+  "version": "1.0.0.0",
+  "brief": "Code examples for AL Language Evolution: Techniques for Modern Developers",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://bcdevnotebook.com/resources/",
+  "url": "https://sessionize.com/app/speaker/session/839960",
+  "logo": ".vscode/ALEvolution.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "25.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 90000,
+      "to": 90025
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "14.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
