@@ -19,6 +19,8 @@ report 70150 "TBMR_OverdueCustomerInvoices"
 
             trigger OnPreDataItem()
             begin
+                if CustomerFilter <> '' then
+                    OpenCLE.SetFilter(Customer_No, CustomerFilter);
                 OpenCLE.Open();
             end;
 
@@ -27,6 +29,34 @@ report 70150 "TBMR_OverdueCustomerInvoices"
                 if not OpenCLE.Read() then
                     CurrReport.Break();
             end;
+        }
+    }
+    requestpage
+    {
+        layout
+        {
+            area(Content)
+            {
+                group(Options)
+                {
+                    Caption = 'Options';
+
+                    field(CustomerFilterField; CustomerFilter)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Customer Filter';
+
+                        trigger OnLookup(var Text: Text): Boolean
+                        var
+                            CustomerList: Page "Customer List";
+                        begin
+                            CustomerList.LookupMode(true);
+                            if CustomerList.RunModal() = Action::LookupOK then
+                                CustomerFilter := CustomerList.GetSelectionFilter();
+                        end;
+                    }
+                }
+            }
         }
     }
     rendering
@@ -51,4 +81,10 @@ report 70150 "TBMR_OverdueCustomerInvoices"
 
     var
         OpenCLE: Query TBMR_OpenCustomerLedgerEntries;
+        CustomerFilter: Text;
+
+    procedure SetCustomerFilter(MyCustomerFilter: Text)
+    begin
+        CustomerFilter := MyCustomerFilter;
+    end;
 }
