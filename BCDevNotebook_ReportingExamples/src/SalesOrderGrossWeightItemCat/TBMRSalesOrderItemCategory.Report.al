@@ -59,7 +59,7 @@ report 70151 "TBMR_SalesOrderItemCategory"
         }
         layout(Excel)
         {
-            Caption = 'Excel Refresh via API';
+            Caption = 'Excel Layout';
             Type = Excel;
             LayoutFile = './src/SalesOrderGrossWeightItemCat/TBMRSalesOrderItemCategory.xlsx';
         }
