@@ -1,6 +1,10 @@
 {
   "country": "us",
-  "appFolders": [],
+  "appFolders": [
+    "BCDevNotebook",
+    "BCDevNotebook_DevTips",
+    "BCDevNotebook_ReportingExamples"
+  ],
   "testFolders": [],
   "bcptTestFolders": []
 }
