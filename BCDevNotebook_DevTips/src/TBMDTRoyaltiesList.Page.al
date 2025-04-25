@@ -1,4 +1,4 @@
-page 70150 "TBMDT_Royalties List"
+page 70200 "TBMDT_Royalties List"
 {
 
     ApplicationArea = All;

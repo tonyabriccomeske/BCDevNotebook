@@ -1,4 +1,4 @@
-table 70150 "TBMDT_Royalties"
+table 70200 "TBMDT_Royalties"
 {
     Caption = 'Royalties';
     DataClassification = CustomerContent;
