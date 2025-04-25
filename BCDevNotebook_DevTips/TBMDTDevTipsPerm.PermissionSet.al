@@ -1,4 +1,4 @@
-permissionset 70150 "TBMDT_DevTipsPerm"
+permissionset 70200 "TBMDT_DevTipsPerm"
 {
     Caption = 'TBM Dev Tips Permission Set';
 

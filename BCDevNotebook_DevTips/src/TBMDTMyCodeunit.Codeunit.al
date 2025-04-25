@@ -1,4 +1,4 @@
-codeunit 70150 "TBMDT_MyCodeunit"
+codeunit 70200 "TBMDT_MyCodeunit"
 {
     var
         MyText: Text;

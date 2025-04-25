@@ -7,10 +7,10 @@
       "path": "BCDevNotebook"
     },
 	{
-		"path": "BCDevNotebook/BCDevNotebook_DevTips"
+		"path": "BCDevNotebook_DevTips"
 	},
 	{
-		"path":"BCDevNotebook/BCDevNotebook_ReportingExamples"
+		"path":"BCDevNotebook_ReportingExamples"
 	}
   ],
   "settings": {}
