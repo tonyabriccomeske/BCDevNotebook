@@ -1,5 +1,5 @@
 {
-    "CRS.AlSubFolderName": "AL Code",
+    "CRS.AlSubFolderName": "src",
     "CRS.ObjectNamePrefix": "TBM_",
     "CRS.OnSaveAlFileAction": "Rename",
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",

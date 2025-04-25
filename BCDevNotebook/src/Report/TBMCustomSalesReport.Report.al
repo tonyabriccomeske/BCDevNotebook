@@ -35,12 +35,12 @@ report 70100 "TBM_Custom Sales Report"
         layout(TBMRDLCLayout)
         {
             Type = RDLC;
-            LayoutFile = './App/AL Code/Report/Layouts/TBMCustomSalesReport.Layout.rdl';
+            LayoutFile = './src/Report/Layouts/TBMCustomSalesReport.Layout.rdl';
         }
         layout(TBMWordLayout)
         {
             Type = Word;
-            LayoutFile = '.App//AL Code/Report/Layouts/TBMCustomSalesReport.Layout.docx';
+            LayoutFile = './src/Report/Layouts/TBMCustomSalesReport.Layout.docx';
         }
     }
     labels

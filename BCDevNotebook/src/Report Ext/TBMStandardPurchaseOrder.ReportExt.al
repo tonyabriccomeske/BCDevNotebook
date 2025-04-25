@@ -13,7 +13,7 @@ reportextension 70100 "TBM_StandardPurchaseOrder" extends "Standard Purchase - O
         {
             Caption = 'TBM Custom Purchase Order Layout';
             Type = Word;
-            LayoutFile = './App/AL Code/Report Ext/Layouts/TBMStandardPurchaseOrder.ReportLayout.docx';
+            LayoutFile = './src/Report Ext/Layouts/TBMStandardPurchaseOrder.ReportLayout.docx';
         }
     }
 }
