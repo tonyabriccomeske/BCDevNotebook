@@ -63,7 +63,7 @@ report 70101 "TBM_MonthlyDateExample"
         layout(MonthlyDateExampleRDL)
         {
             Type = RDLC;
-            LayoutFile = './src/Report/Layouts/TBMMonthlyDateExample.rdl';
+            LayoutFile = './src/OldCode/Report/Layouts/TBMMonthlyDateExample.rdl';
         }
     }
 
