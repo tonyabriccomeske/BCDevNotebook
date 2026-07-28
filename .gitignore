@@ -19,4 +19,6 @@ rad.json
 cache_*
 ~$*
 BCDevNotebook_ReportingExamples/src/SalesOrderGrossWeightItemCat/TBMRSalesOrderItemCategory_CUSTOMEREXAMPLE.xlsx
-BCDevNotebook_ReportingExamples/.vscode/launch.json
+*/.vscode/launch.json
+*/.github/
+BCDevNotebook/.vscode/launch.json
