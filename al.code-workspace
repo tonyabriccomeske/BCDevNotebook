@@ -6,12 +6,15 @@
     {
       "path": "BCDevNotebook"
     },
-	{
-		"path": "BCDevNotebook_DevTips"
-	},
-	{
-		"path":"BCDevNotebook_ReportingExamples"
-	}
+    {
+      "path": "BCDevNotebook_DevTips"
+    },
+    {
+      "path": "BCDevNotebook_ReportingExamples"
+    },
+    {
+      "path": "BCDevNotebook.Test"
+    }
   ],
   "settings": {}
 }

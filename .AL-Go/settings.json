@@ -5,6 +5,8 @@
     "BCDevNotebook_DevTips",
     "BCDevNotebook_ReportingExamples"
   ],
-  "testFolders": [],
+  "testFolders": [
+    "BCDevNotebook.Test"
+  ],
   "bcptTestFolders": []
 }
